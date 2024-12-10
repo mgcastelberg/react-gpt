@@ -1,4 +1,4 @@
-import { GptMessage, MyMessage } from "../../components"
+import { GptMessage, MyMessage, TypingLoader } from "../../components"
 
 export const OrthographyPage = () => {
   return (
@@ -12,6 +12,9 @@ export const OrthographyPage = () => {
             <GptMessage text="Bienvenido a la ortografía de ReactGPT. En esta sección puedes corregir ortografía y mejorar la ortografía de tus textos. ¡Prueba con tu propio texto!" />
 
             <MyMessage text="Esto es un ejemplo de texto para probar la ortografía." />
+
+            {/* Cargando ... */}
+            <TypingLoader className="fade-in"/>
 
           </div>
         </div>
